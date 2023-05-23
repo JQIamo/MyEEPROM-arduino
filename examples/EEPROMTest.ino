@@ -29,7 +29,7 @@ void loop(){
   }
   
   Serial.println("Reading from 0x200");
-  MyEEPROM.read(0x200, buffer22, sizeof(buffer2));
+  MyEEPROM.read(0x200, buffer2, sizeof(buffer2));
 
   for int(i=0; i<sizeof(buffer2); i++){
       Serial.write(buffer2[i]);
